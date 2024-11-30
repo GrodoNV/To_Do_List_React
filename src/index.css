@@ -1,10 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f2f4f5;
-  color: #1e1e1f;
+  background: #f2f4f5 url('https://w.wallhaven.cc/full/zy/wallhaven-zyj28v.jpg') no-repeat center center; /* Imagen de fondo */
+  background-size: cover; /* Hace que la imagen ocupe todo el fondo */
+  color: #7bdefcfa;
   font-family: montserrat, Arial, Helvetica, sans-serif;
 }
+
 #root {
   margin: 0 24px;
   position: relative;

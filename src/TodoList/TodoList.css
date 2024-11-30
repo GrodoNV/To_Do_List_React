@@ -3,3 +3,6 @@
     padding: 0 0 56px;
     list-style: none;
 }
+.TodoList p{ 
+    color: rgb(0, 58, 92);
+}

@@ -1,0 +1,25 @@
+.TodoList-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .TodoList-empty p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61dafb;
+    font-size: 32px;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(97, 218, 251, 0.1) 0%, rgba(97, 218, 251, 0.05) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(97, 218, 251, 0.2);
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(32, 35, 41, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+

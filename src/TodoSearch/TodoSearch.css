@@ -1,22 +1,50 @@
 .TodoSearch {
-    background: #f9fbfc;
-    border-radius: 2px;
-    border: 2px solid #202329;
-    margin: 0 24px;
+    background-color: rgba(255, 255, 255, 0.781);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    border: 1px solid rgba(32, 35, 41, 0.1);
     height: 64px;
     width: calc(100% - 62px);
     font-size: 24px;
     text-align: center;
-    font-family: montserrat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     color: #1e1e1f;
-    box-shadow: 0 5px 50px rgba(32, 35, 41, 0.25);
-    }
-.TodoSearch::placeholder {
-    color: #a5a5a5;
-    font-family: montserrat;
-    font-weight: 400;
+    box-shadow: 0 10px 30px rgba(32, 35, 41, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    max-width: 600px;
+    margin-left: 610px;
+    margin-right: auto;
 }
+
+.TodoSearch:hover {
+box-shadow: 0 15px 40px rgba(32, 35, 41, 0.15);
+transform: translateY(-3px);
+}
+
+.TodoSearch::placeholder {
+color: #021a3ac7;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 400;
+transition: color 0.3s ease;
+}
+
 .TodoSearch:focus {
-    outline-color: #61dafa;
+outline: none;
+border-color: #61dafa;
+box-shadow: 0 0 0 3px rgba(97, 218, 250, 0.3);
+}
+
+.TodoSearch:focus::placeholder {
+color: #7000b1;
+}
+
+@media (max-width: 600px) {
+.TodoSearch {
+    margin: 0 16px;
+    height: 56px;
+    font-size: 20px;
+}
 }
